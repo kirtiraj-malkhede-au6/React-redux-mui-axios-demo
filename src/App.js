@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { Fragment } from "react";
+import AllPost from "./pages/AllPost";
+import EditPost from "./pages/EditPost";
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Routes>
+        <Route path="/" element={<AllPost></AllPost>}></Route>
+        <Route path="/:id" element={<EditPost />}></Route>
+      </Routes>
+    </Fragment>
   );
 }
 

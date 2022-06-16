@@ -1,5 +1,9 @@
 .App {
+  margin-inline: auto;
+  padding-block: 20px;
   text-align: center;
+  background-color: aliceblue;
+  width: 60%;
 }
 
 .App-logo {
