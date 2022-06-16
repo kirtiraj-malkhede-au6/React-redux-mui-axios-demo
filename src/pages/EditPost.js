@@ -179,7 +179,7 @@ const EditPost = () => {
               onChange={contentChangeHandler}
             ></TextField>
             <Button
-              variant="outlined"
+              variant="contained"
               sx={{ width: "80px" }}
               color="success"
               onClick={editPostHandler}
