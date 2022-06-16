@@ -116,6 +116,7 @@ const AllPost = () => {
       >
         <Button
           variant="contained"
+          color="secondary"
           size="small"
           onClick={() => addPostHandler()}
           sx={{ width: "150px", fontSize: "18px" }}
@@ -179,7 +180,7 @@ const AllPost = () => {
                   sx={{ display: "flex", justifyContent: "space-between" }}
                 >
                   <Button
-                    variant="outlined"
+                    variant="contained"
                     color="primary"
                     onClick={() => editPostHandler(item.id)}
                   >
