@@ -140,19 +140,7 @@ const AllPost = () => {
           ) : (
             ""
           )}
-          {closeAlert === true && loading === true ? (
-            <Alert
-              variant="outlined"
-              severity="info"
-              onClose={() => {
-                setCloseAlert(true);
-              }}
-            >
-              Your post delete request is processing..
-            </Alert>
-          ) : (
-            ""
-          )}
+
           {closeAlert === true && success === true ? (
             <Alert
               variant="outlined"
